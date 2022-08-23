@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAYMENT</title>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="fontawesome/all.min.css" type="text/css" />
+    <style>
+      body {
+        background-color: white;
+        font-size: large;
+      }
+      .my-button:hover {
+        /* transform:  scale(0.1, 0.5); */
+        /* transform: skew(20deg); */
+        transform: rotateY(320deg);
+        transition: transform 5s ease-in-out;
+      }
+      #form {
+        background-color: #f8f9ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mb-3 py-3 my-container" id="my-container">
+      <div class="row justify-content-center my-3 mx-auto">
+        <div
+          class="col-lg-4 col-md-6 col-sm-8 h-100 border rounded border-info my-4 p-4"
+          id="form"
+        >
+          <form action="form mx-auto justify-content-center">
+            <div class="text-center">
+              <img
+                class="img-top mx-auto"
+                src="public/card_payment_.png"
+                alt="hand"
+              />
+            </div>
+            <h4 class="text-center fw-bold text-capitalize text-dark">
+              payment info
+            </h4>
+            <label class="form-label" for="fullnameInput"> Full Name </label>
+            <input
+              type="text"
+              class="form-control"
+              id="fullnameinput"
+              placeholder="name"
+            />
+            <label class="form-label" for="creditcardInput">
+              Credit Card Number
+            </label>
+            <input
+              type="number"
+              class="form-control"
+              id="fullnameinput"
+              placeholder="1234 1234 1234 1234"
+            />
+
+            <div class="row">
+              <div class="col">
+                <label class="form-label" for="forExpiryDtaeInput">
+                  Expiry Date
+                </label>
+                <input
+                  type="text"
+                  id="date"
+                  class="form-control"
+                  placeholder="MM/YY"
+                />
+              </div>
+              <div class="col">
+                <label class="form-label" for="cvvInput">CVV</label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="number"
+                    class="form-control"
+                    placeholder="..."
+                  />
+                  <span class="input-group-text"> &CircleTimes; </span>
+                </div>
+              </div>
+            </div>
+            <label class="form-label" for="creditcardInput"> Zip Code </label>
+            <input
+              type="number"
+              class="form-control"
+              id="input"
+              placeholder="1234"
+            />
+            <div class="d-grid gap-2 pt-3">
+              <a
+                href="#"
+                type="button"
+                class="btn btn-primary my-button text-capitalize"
+              >
+                confirm payment
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div
+        class="form-text fst-italic footer text-sm text-center text-primary text-capitalize"
+      >
+        &copy; nyiishi timothy.com
+      </div>
+    </div>
+  </body>
+  <script src="bootstrap.js"></script>
+  <script src="fontawesome/all.min.js"></script>
+</html>
